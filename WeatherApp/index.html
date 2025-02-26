@@ -30,7 +30,7 @@
                 <div class="col">
                     <img src="Images/wind.png">
                     <div>
-                        <p class="wind">15 km/h</p> <!-- ✅ Fixed class name -->
+                        <p class="wind">15 km/h</p> 
                         <p>Wind Speed</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
  document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
  let weatherCondition = data.weather[0].main.toLowerCase();
-     console.log("Weather Condition:", weatherCondition); // ✅ Debugging
+     console.log("Weather Condition:", weatherCondition); 
 
      if (weatherCondition.includes("cloud")) {
          weatherIcon.src = "Images/clouds.png";
